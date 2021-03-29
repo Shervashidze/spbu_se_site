@@ -28,7 +28,11 @@ jobs:
         
         - uses: JesseTG/rm@v1.0.2
           with:
-            path: /
+            path: /docs
+        
+        - uses: JesseTG/rm@v1.0.2
+          with:
+            path: /src
             
         #Removing all files from branch to avoid merge conflicts
         - uses: EndBug/add-and-commit@v7
