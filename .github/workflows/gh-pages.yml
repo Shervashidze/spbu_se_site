@@ -26,10 +26,10 @@ jobs:
           with:
             ref: 'ver2_dev'
             
-        #- uses: dawidd6/action-delete-branch@v3
-         # with:
-          #  github_token: ${{github.token}}
-           # branches: gh-pages
+        - uses: dawidd6/action-delete-branch@v3
+          with:
+            github_token: ${{github.token}}
+            branches: gh-pages
         
         - uses: peterjgrainger/action-create-branch@v2.0.1
           env:
