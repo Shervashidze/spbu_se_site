@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Кафедра Системного программирования Математико-механического факультета СПбГУ.">
     <meta name="author" content="Илья Зеленчук">
-    <meta charset="utf-8">
     <title>Кафедра системного программирования СПбГУ</title>
     <!-- Preloader -->
     <style>
@@ -73,6 +72,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/libs/%40fortawesome/fontawesome-free/css/all.min.css ">
+
+    <!-- Child template headers -->
+    
+<link rel="canonical" href="https://se.math.spbu.ru/"/>
+
+
 </head>
 
 <body>
@@ -172,10 +177,30 @@ a.onreadystatechange = function() {
 
                         <!-- Right navigation -->
                         <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">
+                            <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle="hover">
+                                <a class="nav-link" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
                                     Поступающим
                                 </a>
+                                <div class="dropdown-menu dropdown-menu-md p-0">
+                                    <div class="list-group list-group-flush px-lg-4">
+                                        <a href="index.html#undergraduate" class="list-group-item list-group-item-action" role="button">
+                                            <div class="d-flex">
+                                                <!-- Media body -->
+                                                <div class="ml-3">
+                                                    <small class="text-sm">Бакалавриат</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="index.html#magistracy" class="list-group-item list-group-item-action" role="button">
+                                            <div class="d-flex">
+                                                <!-- Media body -->
+                                                <div class="ml-3">
+                                                    <small class="text-sm">Магистратура</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </li>
                             <li class="nav-item nav-item-spaced dropdown dropdown-animate" data-toggle="hover">
                                 <a class="nav-link" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
@@ -248,30 +273,25 @@ a.onreadystatechange = function() {
                     </div>
                 </div>
             </div>
-
         </nav>
     </header>
 
     
-
     <!-- Main content -->
     <section class="slice py-8 bg-dark bg-cover bg-size--cover" style="background-image: url(assets/img/main-back.jpg);">
         <!-- Container -->
         <div class="container d-flex align-items-center text-center text-lg-left pt-5 pb-5 pt-lg-6">
             <div class="col px-0">
-                <div class="row row-grid align-items-center">
-                    <div class="col-lg-8 text-center text-lg-left">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center text-lg-left">
                         <!-- Heading -->
-                        <h1 class="text-white mb-1 text-">
-                            Кафедра
-                        </h1>
                         <h1 class="text-white mb-1">
-                            Системного
+                            Кафедра Системного Программирования
                         </h1>
-                        <h1 class="text-white mb-2">
-                            Программирования
-                        </h1>
-
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-8 text-center text-lg-left">
                         <!-- Text -->
                         <p class="lead text-white opacity-8 mt-2">
                             Основанная профессором <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B2,_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B5%D0%B2%D0%B8%D1%87" target="_blank">А.Н. Тереховым</a>, 25 лет сочетает классические традиции математико-механического факультета с современной разработкой ПО.
@@ -314,10 +334,7 @@ a.onreadystatechange = function() {
                     <div class="card-deck">
                         <div class="card hover-shadow-lg border-0">
                             <figure>
-                                <picture>
-                                    <source type="image/webp" srcset="assets/img/mm2.webp">
-                                    <img alt="Image placeholder" src="assets/img/mm2.jpg" class="card-img">
-                                </picture>
+                                <img alt="Image placeholder" src="assets/img/mm2.jpg" class="card-img" loading="lazy">
                             </figure>
                         </div>
                         <div class="card hover-shadow-lg border-0">
@@ -353,7 +370,7 @@ a.onreadystatechange = function() {
                             <img style="filter: grayscale(50%);" alt="Image placeholder" src="assets/img/yandex_logo.svg" loading="lazy">
                         </div>
                         <div class="client col-lg-2 col-md-3 col-4 py-3 my-auto">
-                            <img style="filter: grayscale(50%);" alt="Image placeholder" src="assets/img/JetBrains_logo.svg " loading="lazy">
+                            <img style="filter: grayscale(50%);" alt="Image placeholder" src="assets/img/JetBrains_logo.svg" loading="lazy">
                         </div>
                         <div class="client col-lg-2 col-md-3 col-4 py-3 my-auto">
                             <img style="filter: grayscale(50%);" alt="Image placeholder" src="assets/img/VK_logo.svg" loading="lazy">
@@ -370,10 +387,7 @@ a.onreadystatechange = function() {
                     </div>
                     <div class="client-group row justify-content-center">
                         <div class="client col-lg-2 col-md-3 col-4 py-3 my-auto">
-                            <picture>
-                                <source type="image/webp" srcset="assets/img/lt_logo.webp">
-                                <img style="filter: grayscale(50%);" alt="Image placeholder" src="assets/img/lt_logo.png" loading="lazy">
-                            </picture>
+                            <img style="filter: grayscale(50%);" alt="Image placeholder" src="assets/img/lt_logo.png" loading="lazy">
                         </div>
                         <div class="client col-lg-2 col-md-3 col-4 py-3 my-auto">
                             <img style="filter: grayscale(50%);" alt="Image placeholder" src="assets/img/Google_logo.svg" loading="lazy">
@@ -413,185 +427,159 @@ a.onreadystatechange = function() {
             <div class="row">
                 <div class="col-lg-12 text-left">
                     <div class="mb-3">
-                        <h4 class="text-white">Бакалавриат</h4>
+                        <h4 class="text-white" id="undergraduate">Бакалавриат</h4>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="card hover-translate-y-n3 hover-shadow-lg bg-light-dark shadow-lg rounded-lg border-0">
-                        <div class="card-header">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h6 text-white">Программная инженерия</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="h6 font-weight-light text-muted">09.03.04</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="pt-2 pb-3">
-                                <p class="text-white mb-0">Для тех, кто получает удовольствие от создания программных продуктов и хочет больше узнать о процессе создания ПО</p>
-                            </div>
-                        </div>
-                        <div class="card-footer border-0 delimiter-top">
-                            <div class="row align-items-center">
-                                <div class="col-lg-4 text-center text-lg-left pr-0">
+            <div class="row mb-3">
+                <div class="col-lg-12">
+                    <div class="card-deck">
+                        <div class="card hover-translate-y-n3 hover-shadow-lg bg-light-dark shadow-lg rounded-lg border-0">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <h4 class="mb-0 text-white">288</h4>
-                                        <p class="text-white text-sm opacity-8">Проходной балл 2019</p>
+                                        <span class="h6 text-white">Программная инженерия</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="h6 font-weight-light text-muted">09.03.04</span>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 text-center text-lg-left">
-                                    <div>
-                                        <h4 class="mb-0 text-white">20</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="pt-2 pb-3">
+                                    <p class="text-white mb-0">Для тех, кто получает удовольствие от создания программных продуктов и хочет больше узнать о процессе создания ПО</p>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 delimiter-top">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4 text-center text-lg-left pr-0">
+                                        <h4 class="mb-0 text-white">265</h4>
+                                        <p class="text-white text-sm opacity-8">Проходной балл 2020</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center text-lg-left">
+                                        <h4 class="mb-0 text-white">30</h4>
                                         <p class="text-white text-sm opacity-8">Мест (бюджет)</p>
                                     </div>
-                                </div>
-                                <div class="col-lg-4 text-center text-lg-left pr-0">
-                                    <div>
-                                        <h4 class="mb-0 text-white">10</h4>
+                                    <div class="col-lg-4 text-center text-lg-left pr-0">
+                                        <h4 class="mb-0 text-white">15</h4>
                                         <p class="text-white text-sm opacity-8">Мест (контракт)</p>
                                     </div>
                                 </div>
                             </div>
+                            <a href="bachelor/software-engineering.html" class="stretched-link"></a>
                         </div>
-                        <a href="bachelor/software-engineering.html" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card hover-translate-y-n3 hover-shadow-lg bg-light-dark shadow-lg rounded-lg border-0">
-                        <div class="card-header">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h6 text-white">Технологии программирования</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="h6 font-weight-light text-muted">02.03.03</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="pt-2 pb-3">
-                                <p class="text-white mb-0">Для тех, кто получает удовольствие от решения алгоритмических и технических задач и хочет больше узнать о современных задачах и способах их решения</p>
-                            </div>
-                        </div>
-                        <div class="card-footer border-0 delimiter-top">
-                            <div class="row align-items-center">
-                                <div class="col-lg-4 text-center text-lg-left pr-0">
+                        <div class="card hover-translate-y-n3 hover-shadow-lg bg-light-dark shadow-lg rounded-lg border-0">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <h4 class="mb-0 text-white">276</h4>
-                                        <p class="text-white text-sm opacity-8">Проходной балл 2019</p>
+                                        <span class="h6 text-white">Технологии программирования</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="h6 font-weight-light text-muted">02.03.03</span>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 text-center text-lg-left">
-                                    <div>
+                            </div>
+                            <div class="card-body">
+                                <div class="pt-2 pb-3">
+                                    <p class="text-white mb-0">Для тех, кто получает удовольствие от решения алгоритмических и технических задач и хочет больше узнать о современных задачах и способах их решения</p>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 delimiter-top">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4 text-center text-lg-left pr-0">
+                                        <h4 class="mb-0 text-white">240</h4>
+                                        <p class="text-white text-sm opacity-8">Проходной балл 2020</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center text-lg-left">
                                         <h4 class="mb-0 text-white">60</h4>
                                         <p class="text-white text-sm opacity-8">Мест (бюджет)</p>
                                     </div>
-                                </div>
-                                <div class="col-lg-4 text-center text-lg-left pr-0">
-                                    <div>
+                                    <div class="col-lg-4 text-center text-lg-left pr-0">
                                         <h4 class="mb-0 text-white">10</h4>
                                         <p class="text-white text-sm opacity-8">Мест (контракт)</p>
                                     </div>
                                 </div>
                             </div>
+                            <a href="bachelor/programming-technology.html" class="stretched-link"></a>
                         </div>
-                        <a href="bachelor/programming-technology.html" class="stretched-link"></a>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row ">
                 <div class="col-12 text-left">
-                    <h4 class="text-white">Магистратура</h4>
+                    <h4 class="text-white" id="magistracy">Магистратура</h4>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="card hover-translate-y-n3 hover-shadow-lg shadow-lg rounded-lg border-0">
-                        <div class="card-header">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h6">Программная инженерия</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="h6 font-weight-light text-muted">09.04.04</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="pt-2 pb-3">
-                                <p class="mb-0"></p>
-                            </div>
-                        </div>
-                        <div class="card-footer border-0 delimiter-top">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 text-center text-lg-left">
+                <div class="col-lg-12">
+                    <div class="card-deck">
+                        <div class="card hover-translate-y-n3 hover-shadow-lg shadow-lg rounded-lg border-0">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div>
+                                        <span class="h6">Программная инженерия</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="h6 font-weight-light text-muted">09.04.04</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="pt-2 pb-3">
+                                    <p class="mb-0">Для тех, кто хочет заняться научным исследованием в области решения современных технических задач</p>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 delimiter-top">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 text-center text-lg-left">
                                         <h4 class="mb-0">20</h4>
                                         <p class="text-sm opacity-8">Мест (бюджет)</p>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 text-center text-lg-left">
-                                    <div>
+                                    <div class="col-lg-6 text-center text-lg-left pr-0">
                                         <h4 class="mb-0">10</h4>
                                         <p class="text-sm opacity-8">Мест (контракт)</p>
                                     </div>
                                 </div>
                             </div>
+                            <a href="master/software-engineering.html" class="stretched-link"></a>
                         </div>
-                        <a href="master/software-engineering.html" class="stretched-link"></a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card hover-translate-y-n3 hover-shadow-lg shadow-lg rounded-lg border-0">
-                        <div class="card-header">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h6">Математическое обеспечение и администрирование информационных систем</span>
-                                </div>
-                                <div class="text-right">
-                                    <span class="h6 font-weight-light text-muted">02.04.03</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="pt-2 pb-3">
-                                <p class="mb-0"></p>
-                            </div>
-                        </div>
-                        <div class="card-footer border-0 delimiter-top">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6 text-center text-lg-left">
+                        <div class="card hover-translate-y-n3 hover-shadow-lg shadow-lg rounded-lg border-0">
+                            <div class="card-header">
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div>
-                                        <h4 class="mb-0">40</h4>
-                                        <p class="text-sm opacity-8">Мест (бюджет)</p>
+                                        <span class="h6">Математическое обеспечение и администрирование информационных систем</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="h6 font-weight-light text-muted">02.04.03</span>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 text-center text-lg-left">
-                                    <div>
+                            </div>
+                            <div class="card-body">
+                                <div class="pt-2 pb-3">
+                                    <p class="mb-0">Для тех, кто хочет заняться научным исследованием в области решения современных алгоритмических задач и углубиться в профильные дисциплины</p>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 delimiter-top">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 text-center text-lg-left">
+                                        <h4 class="mb-0">35</h4>
+                                        <p class="text-sm opacity-8">Мест (бюджет)</p>
+                                    </div>
+                                    <div class="col-lg-6 text-center text-lg-left pr-0">
                                         <h4 class="mb-0">20</h4>
                                         <p class="text-sm opacity-8">Мест (контракт)</p>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                         <a href="master/information-systems-administration.html" class="stretched-link"></a>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <section class="slice bg-section-secondary" id="mm_map">
-        <!-- SVG separator -->
-        <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
-            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
-                <polygon points="2560 0 2560 100 0 100"></polygon>
-            </svg>
-        </div>
         <!-- Container -->
         <div class="container">
             <!-- Title -->
@@ -642,28 +630,21 @@ a.onreadystatechange = function() {
                 <div class="col-lg-3">
                     <div class="card hover-shadow-lg border-0">
                         <figure>
-                            <picture>
-                                <source type="image/webp" srcset="assets/img/campus-1.webp">
-                                <img alt="Image placeholder" src="assets/img/campus-1.jpg" class="card-img" loading="lazy">
-                            </picture>
+                            <img alt="Image placeholder" src="assets/img/campus-1.jpg" class="card-img" loading="lazy">
                         </figure>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="card hover-shadow-lg border-0">
-                        <picture>
-                            <source type="image/webp" srcset="assets/img/campus-2.webp">
+                        <figure>
                             <img alt="Image placeholder" src="assets/img/campus-2.jpg" class="card-img" loading="lazy">
-                        </picture>
+                        </figure>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="card hover-shadow-lg">
                         <figure>
-                            <picture>
-                                <source type="image/webp" srcset="assets/img/campus-3.webp">
-                                <img alt="Image placeholder" src="assets/img/campus-3.jpg" class="card-img" loading="lazy">
-                            </picture>
+                            <img alt="Image placeholder" src="assets/img/campus-3.jpg" class="card-img" loading="lazy">
                         </figure>
                     </div>
                 </div>
@@ -682,44 +663,68 @@ a.onreadystatechange = function() {
             </div>
 
             <!-- Footer -->
-            <div class="container pt-4">
+            <div class="container pt-2" itemscope itemtype="http://schema.org/Organization" id="schema-organization">
                 <div class="row">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="col-lg-4 col-4 col-sm-4 mb-5 mb-lg-0">
                         <!-- Theme's logo -->
-                        <a href="index.html">
-                            <img alt="Image placeholder" src="assets/img/logo.svg" id="footer-logo">
+                        <a href="index.html" itemprop="url">
+                            <img class="img-fluid" alt="Логотип Кафедры Системного Программирования" src="assets/img/logo.svg" id="footer-logo" itemprop="logo">
                         </a>
                         <!-- Webpixels' mission -->
-                        <p class="mt-4 text-sm opacity-8 pr-lg-4">Основанная профессором А.Н. Тереховым.</p>
+                        <p class="mt-4 text-sm opacity-8 pr-lg-4" itemprop="founder" itemscope itemtype="https://schema.org/Person">Основатель <span itemprop="name">профессор А.Н. Терехов.</span></p>
                     </div>
-                    <div class="col-lg-5 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+                    <div class="col-lg-4 col-4 col-sm-4 mb-5 mb-lg-0">
                         <h6 class="heading mb-4">Контактная информация</h6>
                         <ul class="list-unstyled">
-                            <li><p class="text-sm opacity-8 mb-0">Телефон: <a href="tel:+78124287109">+7 (812) 428-71-09</a></p></li>
-                            <li><p class="text-sm opacity-8 mb-0">Email: <a href="mailto:a.terekhov@spbu.ru">a.terekhov@spbu.ru</a></p></li>
-                            <li><p class="text-sm opacity-8 mb-0">Telegram: <a target="_blank" href="https://t.me/sysprog2020admission">@sysprog2020admission</a></p></li>
-                            <li><p class="text-sm opacity-8 mb-0">Старая версия сайта: <a target="_blank" href="https://oops.math.spbu.ru/SE">oops.math.spbu.ru/SE</a></p></li>
+                            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <li><p class="text-sm opacity-8 mb-0"><span itemprop="postalCode">198504</span>, <span itemprop="addressLocality">Санкт-Петербург</span></p></li>
+                            <li><p class="text-sm opacity-8 mb-0"><span itemprop="streetAddress">Университетский проспект, дом 28</span></p></li>
+                            </span>
+                            <li><p class="text-sm opacity-8 mb-0">Телефон: <a href="tel:+78124287109" itemprop="telephone">+7 (812) 428-71-09</a></p></li>
+                            <li><p class="text-sm opacity-8 mb-0">Email: <a href="mailto:a.terekhov@spbu.ru" itemprop="email">a.terekhov@spbu.ru</a></p></li>
+                            <li><p class="text-sm opacity-8 mb-0">Telegram: <a target="_blank" href="https://t.me/sysprog2020admission" itemprop="sameAs">@sysprog2020admission</a></p></li>
+                            <li><p class="text-sm opacity-8 mb-0">Старая версия сайта: <a target="_blank" href="https://oops.math.spbu.ru/SE" itemprop="sameAs">oops.math.spbu.ru/SE</a></p></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
-                        <h6 class="heading mb-3">Меню</h6>
+                    <div class="col-lg-4 col-4 col-sm-4 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">Поступающим</h6>
                         <ul class="list-unstyled">
-                            <li><a href="index.html">Поступающим</a></li>
-                            <li><a href="students.html">Студентам</a></li>
-                            <li><a href="https://oops.math.spbu.ru/SE/alumni" target="_blank">Выпускники</a></li>
+                            <li><a href="index.html#undergraduate">В&nbsp;бакалавриат</a></li>
+                            <li><a href="index.html#magistracy">В&nbsp;магистратуру</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-4 col-sm-4 mb-lg-0">
+                        <h6 class="heading mb-3">Студентам</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="https://oops.math.spbu.ru/SE/arhiv-diplomnyh-i-kursovyh-rabot">Архив ВКР и курсовых работ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-4 col-sm-4 mb-lg-0">
+                        <h6 class="heading mb-3">Выпускники</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="https://oops.math.spbu.ru/SE/arhiv-diplomnyh-i-kursovyh-rabot">Архив ВКР</a></li>
+                            <li><a href="https://oops.math.spbu.ru/SE/alumni">Выпускники кафедры</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-4 col-sm-4 mb-lg-0">
+                        <h6 class="heading mb-3">Кафедра</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="department/staff.html">Сотрудники</a></li>
                             <li><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
-                <hr class="divider divider-fade divider-dark my-4">
-                <div class="row align-items-center justify-content-md-between pb-4">
-                    <div class="col-md-10">
-                        <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                            &copy; Кафедра системного программирования, Математико-механический факультет, СПбГУ, 1996-2021
+                <div class="row">
+                    <hr class="divider divider-fade divider-dark">
+                        <div class="col-lg-12">
+                            <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                                &copy; <span itemprop="name">Кафедра системного программирования</span>, Математико-механический факультет, СПбГУ, 1996-2021
+                            </div>
                         </div>
-                    </div>
                 </div>
-            </div>
+        </div>
         </div>
     </footer>
     <!-- Core JS  -->
