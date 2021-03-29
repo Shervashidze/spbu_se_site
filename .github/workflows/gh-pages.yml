@@ -31,7 +31,7 @@ jobs:
           with:
                 branch: gh-pages
                 add: '.'
-                remove: '-r *'
+                #remove: '-r *'
                 message: 'Delete all files'
         
         
