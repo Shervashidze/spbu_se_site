@@ -39,7 +39,7 @@ jobs:
             # Head branch, which will be rebased onto the base_ref.
                 head_branch: ver2_dev
             # Branch, or Git ref, that the head_branch will be rebased onto.
-                base_ref: gh-pages
+                base_ref: origin/gh-pages
 
         
         #- name: Merge development -> gh-pages
