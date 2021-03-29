@@ -21,10 +21,21 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
       steps:
       
+        # Checks-out to branch ver2_dev
+        - uses: actions/checkout@v2
+          with:
+            ref: 'ver2_dev'
+            
         - uses: dawidd6/action-delete-branch@v3
           with:
             github_token: ${{github.token}}
             branches: gh-pages
+        
+        - uses: peterjgrainger/action-create-branch@v2.0.1
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            branch: 'gh-pages'
         
         # Checks-out repository branch ver2_dev
         - uses: actions/checkout@v2
