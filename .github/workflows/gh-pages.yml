@@ -34,14 +34,21 @@ jobs:
                 #remove: '-r *'
                 message: 'Delete all files'
         
-        
-        - name: Merge development -> gh-pages
-          uses: devmasx/merge-branch@v1.3.1
+        - uses: DeeDeeG/rebase-github-action@main
           with:
-            type: now
-            from_branch: ver2_dev
-            target_branch: gh-pages
-            github_token: ${{ github.token }}
+            # Head branch, which will be rebased onto the base_ref.
+                head_branch: ver2_dev
+            # Branch, or Git ref, that the head_branch will be rebased onto.
+                base_ref: gh-pages
+
+        
+        #- name: Merge development -> gh-pages
+         # uses: devmasx/merge-branch@v1.3.1
+          #with:
+           # type: now
+            #from_branch: ver2_dev
+            #target_branch: gh-pages
+            #github_token: ${{ github.token }}
         
         # Set up Python 3.6 environment
         - uses: actions/setup-python@v2
