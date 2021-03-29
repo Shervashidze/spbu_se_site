@@ -21,34 +21,16 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
       steps:
       
+        - uses: dawidd6/action-delete-branch@v3
+          with:
+            github_token: ${{github.token}}
+            branches: gh-pages
+        
         # Checks-out repository branch ver2_dev
         - uses: actions/checkout@v2
           with:
             ref: 'gh-pages'
             
-        #Removing all files from branch to avoid merge conflicts
-        - uses: EndBug/add-and-commit@v7
-          with:
-                branch: gh-pages
-                add: '.'
-                #remove: '-r *'
-                message: 'Delete all files'
-        
-        - uses: DeeDeeG/rebase-github-action@main
-          with:
-            # Head branch, which will be rebased onto the base_ref.
-                head_branch: origin/ver2_dev
-            # Branch, or Git ref, that the head_branch will be rebased onto.
-                base_ref: origin/gh-pages
-
-        
-        #- name: Merge development -> gh-pages
-         # uses: devmasx/merge-branch@v1.3.1
-          #with:
-           # type: now
-            #from_branch: ver2_dev
-            #target_branch: gh-pages
-            #github_token: ${{ github.token }}
         
         # Set up Python 3.6 environment
         - uses: actions/setup-python@v2
