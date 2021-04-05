@@ -70,6 +70,6 @@ jobs:
         - name: Push to gh-pages
           uses: EndBug/add-and-commit@v7.0.0
           with:
-            remove: './node_modules'
+            remove: './node_modules -r'
             branch: 'gh-pages'
             message: 'Update gh-pages /docs/'
