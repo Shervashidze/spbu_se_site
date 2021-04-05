@@ -50,11 +50,12 @@ jobs:
             python src/flask_se.py build
 
 
-        # Commit docs to gh-pages
+        # install npm and run script
         - name: install npm and run script
-        - uses: actions/setup-node@v2
+          uses: actions/setup-node@v2
           with: 
             node-version: '14'
+            
         - run: npm install imagemin imagemin-webp
         - run: node .github/workflows/Scripts/WebpConverter.js
 
