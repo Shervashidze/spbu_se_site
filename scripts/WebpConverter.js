@@ -1,6 +1,6 @@
 var imagemin = require("imagemin"),    // The imagemin module.
   webp = require("imagemin-webp"),   // imagemin's WebP plugin.
-  outputFolder = "../docs/assets/img",            // Output folder
+  outputFolder = "../docs/assets/img/",            // Output folder
   PNGImages = "../docs/assets/img/*.png",         // PNG images
   JPEGImages = "../docs/assets/img/*.jpg";        // JPEG images
   
