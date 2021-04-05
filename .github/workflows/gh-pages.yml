@@ -63,6 +63,8 @@ jobs:
         - run: npm install @nodelib/fs.scandir
         - run: npm init --yes
         - run: node ./WebpConverter.js
+        - run: npm i -g purgecss
+        - run: purgecss -css docs/assets/css/*.css --content docs/assets/css --safelist show
 
         # Commit docs to gh-pages
         - name: Push to gh-pages
