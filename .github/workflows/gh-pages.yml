@@ -64,7 +64,7 @@ jobs:
         - run: npm init --yes
         - run: node ./WebpConverter.js
         - run: npm i -g purgecss
-        - run: purgecss --css docs/assets/css/*.css --content docs/*.html --safelist show 
+        - run: purgecss --css docs/assets/css/*.css --content docs/*.html --safelist show --output docs/assets/css
 
         # Commit docs to gh-pages
         - name: Push to gh-pages
