@@ -51,8 +51,7 @@ jobs:
 
 
         # Commit docs to gh-pages
-        - name: install npm
-        - uses: actions/checkout@v2
+        - name: install npm and run script
         - uses: actions/setup-node@v2
           with: 
             node-version: '14'
