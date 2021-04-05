@@ -10,8 +10,9 @@ imagemin([PNGImages], outputFolder, {
   })]
 });
 
-imagemin([JPEGImages], outputFolder, {
-  plugins: [webp({
-    quality: 65 // Quality setting from 0 to 100
-  })]
+imagemin(['docs/assets/img/*.jpg'], {
+    destination: __dirname + '/docs/assets/img',
+    plugins: [
+        webp({quality: 65})
+    ]
 });
