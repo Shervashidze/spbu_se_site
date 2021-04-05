@@ -57,7 +57,7 @@ jobs:
             node-version: '14'
             
         - run: npm install imagemin imagemin-webp
-        - run: node .github/workflows/Scripts/WebpConverter.js
+        - run: node scripts/WebpConverter.js
 
         # Commit docs to gh-pages
         - name: Push to gh-pages
