@@ -58,6 +58,7 @@ jobs:
 
         - run: npm install fast-glob
         - run: npm install imagemin imagemin-webp
+        - run: npm init
         - run: node scripts/WebpConverter.js
 
         # Commit docs to gh-pages
