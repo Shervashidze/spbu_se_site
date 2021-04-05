@@ -58,6 +58,7 @@ jobs:
 
         - run: npm install fast-glob
         - run: npm install imagemin imagemin-webp
+        - run: npm install -g split-string
         - run: npm init --yes
         - run: node scripts/WebpConverter.js
 
