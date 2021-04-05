@@ -49,16 +49,6 @@ jobs:
           run: |
             python src/flask_se.py build
 
-	- name: install npm
-	- uses: actions/checkout@v2
-	- uses: actions/setup-node@v2
-  	  with:
-    	    node-version: '14'
-	- run: npm install imagemin imagemin-webp
-	- run: node .github/workflows/Scripts/WebpConverter.js
-
-	# Convert all images to webp
-	- name: Convert all images to webp
 
         # Commit docs to gh-pages
         - name: Push to gh-pages
@@ -66,4 +56,12 @@ jobs:
           with:
             branch: 'gh-pages'
             message: 'Update gh-pages /docs/'
-
+	    
+        # Commit docs to gh-pages
+        - name: install npm
+        - uses: actions/checkout@v2
+        - uses: actions/setup-node@v2
+          with: 
+            node-version: '14'
+        - run: npm install imagemin imagemin-webp
+        - run: node .github/workflows/Scripts/WebpConverter.js
