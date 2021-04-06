@@ -62,9 +62,9 @@ jobs:
         - run: npm install @nodelib/fs.walk
         - run: npm install @nodelib/fs.scandir
         - run: npm init --yes
-        - run: node scripts/webpimg.js
-        - run: node scripts/webpstuff.js
-        - run: node scripts/webpreviews.js
+        - run: node ./webpimg.js
+        - run: node ./webpstuff.js
+        - run: node ./webpreviews.js
         - run: npm i -g purgecss
         - run: purgecss --css docs/assets/css/*.css --content src/templates/*.html --safelist show --output docs/assets/css
 
