@@ -56,16 +56,11 @@ jobs:
           with: 
             node-version: '14'
 
-        - run: npm install fast-glob
-        - run: npm install imagemin imagemin-webp
-        - run: npm install @nodelib/fs.stat
-        - run: npm install @nodelib/fs.walk
-        - run: npm install @nodelib/fs.scandir
+        - run: npm install glob
+        - run: npm install webp
         - run: npm init --yes
-        - run: node ./webpimg.js
-        - run: node ./webpstuff.js
-        - run: node ./webpreviews.js
         - run: npm i -g purgecss
+        - run: node ./script.js
         - run: purgecss --css docs/assets/css/*.css --content src/templates/*.html --safelist show --output docs/assets/css
 
         # Commit docs to gh-pages
