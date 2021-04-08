@@ -57,7 +57,7 @@ jobs:
             node-version: '14'
 
         - run: npm install glob
-        - run: npm install webp
+        - run: npm install cwebp
         - run: npm init --yes
         - run: npm i -g purgecss
         - run: node ./script.js
