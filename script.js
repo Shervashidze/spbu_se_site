@@ -11,6 +11,7 @@ glob('./docs/**/*.jpg', function(err, files) {
     
     var encoder = new CWebp(element);
     encoder.quality(65);
+    
 
     element = element.replace('.jpg', '.webp');
     element = element.replace('.png', '.webp');
