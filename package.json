@@ -9,7 +9,9 @@
     "@nodelib/fs.scandir": "^2.1.4",
     "@nodelib/fs.stat": "^2.0.4",
     "@nodelib/fs.walk": "^1.2.6",
+    "cwebp": "^2.0.5",
     "fast-glob": "^3.2.5",
+    "glob": "^7.1.6",
     "imagemin": "^7.0.1",
     "imagemin-webp": "^6.0.0"
   },
