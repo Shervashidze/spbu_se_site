@@ -3,6 +3,7 @@ const imageminWebp = require('imagemin-webp');
 const path = require('path');
 var glob = require('glob');
 
+
 glob('./docs/**/*.jpg', function(err, files) {
   files.forEach(element => {
     console.log(element);
