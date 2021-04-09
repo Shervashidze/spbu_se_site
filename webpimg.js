@@ -8,5 +8,6 @@ const path = require('path');
     plugins: [imageminWebp({ quality: 70 })],
   });
 
+  console.log(path.resolve('./docs') + '/assets/images');
   console.log(files);
 })();
