@@ -7,7 +7,7 @@ glob('./docs/**/*.jpg', function(err, files) {
   files.forEach(element => {
     console.log(element);
     imagemin([element]), {
-      destination: './',
+      destination: element.substring(0,element.lastIndexOf("/")+1),
       plugins: [imageminWebp({ quality: 70 })]
     };
   })
