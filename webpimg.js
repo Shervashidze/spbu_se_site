@@ -1,12 +1,14 @@
 const imagemin = require('imagemin');
 const imageminWebp = require('imagemin-webp');
 const path = require('path');
+var glob = require('glob');
 
-(async () => {
-  const files = await imagemin(['docs/assets/img/*.{jpg,png}'], {
-    destination: path.resolve('./docs') + '/assets/img',
-    plugins: [imageminWebp({ quality: 70 })],
-  });
-
-  console.log(files);
-})();
+glob('./docs/**/*.jpg', function(err, files) {
+  files.forEach(element => {
+    console.log(element);
+    imagemin([element]), {
+      destination: './',
+      plugins: [imageminWebp({ quality: 70 })]
+    };
+  })
+});
