@@ -3,11 +3,10 @@ const imageminWebp = require('imagemin-webp');
 const path = require('path');
 
 (async () => {
-  const files = await imagemin(['docs/assets/images/*.{jpg}'], {
-    destination: path.resolve('./docs') + '/assets/images',
+  const files = await imagemin(['docs/assets/img/*.{jpg,png}'], {
+    destination: path.resolve('./docs') + '/assets/img',
     plugins: [imageminWebp({ quality: 70 })],
   });
 
-  console.log(path.resolve('./docs') + '/assets/images');
   console.log(files);
 })();
