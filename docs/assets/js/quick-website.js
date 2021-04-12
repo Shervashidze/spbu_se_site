@@ -182,6 +182,52 @@ Copyright 2020 Webpixels
 
 'use strict';
 
+var PopoverHover = (function() {
+
+	// Variables
+
+	var $popover = $('[data-toggle="popoverhover"]');
+
+
+	// Methods
+
+	function init($this) {
+		var popoverClass = '';
+
+		if ($this.data('color')) {
+			popoverClass = ' popover-' + $this.data('color');
+		}
+
+		var options = {
+			trigger: 'hover',
+			template:
+			'<div class="popover' + popoverClass + '" role="tooltip">'+
+				'<div class="arrow"></div>'+
+				'<h3 class="popover-header"></h3>' +
+				'<div class="popover-body"></div>' +
+				'<div class="popover-navigation">' +
+					'<button class="btn btn-primary" data-role="prev">« Prev</button>' +
+					'<button class="btn btn-primary" data-role="next">Next »</button>' +
+					'<button class="btn btn-primary" data-role="end">End tour</button>' +
+				'</div>' +
+			'</div>'
+		};
+
+		$this.popover(options);
+	}
+
+
+	// Events
+
+	if ($popover.length) {
+		$popover.each(function() {
+			init($(this));
+		});
+	}
+
+})();
+
+
 var Popover = (function() {
 
 	// Variables
@@ -358,7 +404,7 @@ var Tooltip = (function() {
 'use strict';
 
 // Cookies
-
+/*
 var Cookies = (function() {
 
 	// Variables
@@ -390,6 +436,45 @@ var Cookies = (function() {
         })
 	}
 
+})();
+
+*/
+
+/*
+ * Bootstrap Cookie Alert by Wruczek
+ * https://github.com/Wruczek/Bootstrap-Cookie-Alert
+ * Released under MIT license
+ */
+
+
+(function () {
+
+    var cookieAlert = document.querySelector(".cookiealert");
+    var acceptCookies = document.querySelector(".acceptcookies");
+
+    if (!cookieAlert) {
+       return;
+    }
+
+    cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+
+    var cookies = localStorage.getItem('modal_cookies');
+
+    // Show the alert if we cant find the "acceptCookies" cookie
+    if (! cookies) {
+        cookieAlert.classList.add("show");
+        //cookieAlert.collapse('show');
+    }
+
+    // When clicking on the agree button, create a 1 year
+    // cookie to remember user's choice and close the banner
+    acceptCookies.addEventListener("click", function () {
+        localStorage.setItem('modal_cookies', 1);
+        cookieAlert.classList.remove("show");
+
+        // dispatch the accept event
+        window.dispatchEvent(new Event("cookieAlertAccept"))
+    });
 })();
 
 var CopyType = (function() {
@@ -1013,6 +1098,85 @@ var GoogleMapCustom = (function() {
     }
 })();
 
+//
+// Google maps for MM
+//
+
+var GoogleMapCustom = (function() {
+    var $map = document.getElementById('map-mm-dormitory'),
+        lat_mm,
+        lng_mm,
+        lat_d,
+        lng_d,
+        color,
+        zoom;
+
+    function initMap(map) {
+
+        // Faculty of Mathematics and Mechanics
+        lat_mm = 59.87996;
+        lng_mm = 29.8305919;
+
+        // Dormitory
+        lat_d = 59.87487;
+        lng_d = 29.8248978;
+
+        color = map.getAttribute('data-color');
+        zoom = map.getAttribute('data-zoom') ? parseInt(map.getAttribute('data-zoom')) : 12;
+
+        var myLatlng_mm = new google.maps.LatLng(lat_mm, lng_mm);
+        var myLatlng_d = new google.maps.LatLng(lat_d, lng_d);
+
+        var mapOptions = {
+            zoom: zoom,
+            scrollwheel: false,
+            center: myLatlng_mm,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":color},{"visibility":"on"}]}]
+        }
+
+        map = new google.maps.Map(map, mapOptions);
+
+        var marker_mm = new google.maps.Marker({
+            position: myLatlng_mm,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            title: 'Математико-механической факультет'
+        });
+
+        var marker_d = new google.maps.Marker({
+            position: myLatlng_d,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            title: 'Петергофский кампус СПбГУ'
+        });
+
+        var contentString_mm = '<div class="info-window-content"><h5>Математико-Механический факультет, СПбГУ</h5>' +
+            '<p>Учебный корпус математико-механического факультета, СПбГУ</p></div>';
+
+        var contentString_d = '<div class="info-window-content"><h5>Петергофский кампус СПбГУ</h5>' +
+            '<p>Общежитие, СПбГУ</p></div>';
+
+        var infowindow_mm = new google.maps.InfoWindow({
+            content: contentString_mm
+        });
+
+        var infowindow_d = new google.maps.InfoWindow({
+            content: contentString_d
+        });
+
+        google.maps.event.addListener(marker_mm, 'click', function() {
+            infowindow_mm.open(map, marker_mm);
+        });
+        google.maps.event.addListener(marker_d, 'click', function() {
+            infowindow_d.open(map, marker_d);
+        });
+    }
+
+    if (typeof($map) != 'undefined' && $map != null) {
+        google.maps.event.addDomListener(window, 'load', initMap($map));
+    }
+})();
 //
 // Google maps
 //

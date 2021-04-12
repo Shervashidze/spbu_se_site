@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" >
 
 <head>
     <meta charset="utf-8">
@@ -82,26 +82,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- SPbU topbar (noscript) -->
 <script type="text/javascript"> (function(){ var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true; sc.src = '//topbar.spbu.ru/loader.js'; var ls = document.getElementsByTagName('script')[0]; ls.parentNode.insertBefore(sc, ls); })(); </script>
 <!-- End SPbU topbar (noscript) -->
-<!-- Preloader -->
-<div class="preloader">
-    <div class="spinner-border text-primary" role="status">
-        <span class="sr-only">Загрузка...</span>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Загрузка...</span>
+        </div>
     </div>
-</div>
-<div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false" aria-labelledby="modal-cookies" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
-        <div class="modal-content bg-dark-dark">
-            <div class="modal-body">
-                <!-- Text -->
-                <p class="text-sm text-white mb-3">
+
+    <div class="fixed-bottom bg-dark-dark alert mb-0 cookiealert collapse" id="modal-cookies" role="alert">
+    <!-- Text -->
+        <div class="container">
+            <div class="row align-items-center">
+                <p class="text-sm text-white mb-0 my-auto">
                     Продолжая использовать наш сайт, вы даете согласие на обработку файлов cookie, которые обеспечивают правильную работу сайта.
                 </p>
                 <!-- Buttons -->
-                <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">Согласен</button>
+                <button type="button" class="btn btn-sm btn-primary ml-0 mt-2 mt-lg-0 ml-lg-4 acceptcookies">Согласен</button>
             </div>
         </div>
     </div>
-</div>
+
 <!-- Header -->
     <header class="header-transparent pt-5" id="header-main">
         <!-- Navbar -->
@@ -145,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-md p-0">
                                     <div class="list-group list-group-flush px-lg-4">
-                                        <a href="../index.html#undergraduate" class="list-group-item list-group-item-action" role="button">
+                                        <a href="admission.html" class="list-group-item list-group-item-action" role="button">
                                             <div class="d-flex">
                                                 <!-- Media body -->
                                                 <div class="ml-3">
@@ -158,6 +159,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <!-- Media body -->
                                                 <div class="ml-3">
                                                     <small class="text-sm">Магистратура</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="../frequently-asked-questions.html" class="list-group-item list-group-item-action" role="button">
+                                            <div class="d-flex">
+                                                <!-- Media body -->
+                                                <div class="ml-3">
+                                                    <small class="text-sm">Вопросы и ответы</small>
                                                 </div>
                                             </div>
                                         </a>
@@ -415,10 +424,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-lg-4 col-4 col-sm-4 mb-5 mb-lg-0">
                         <h6 class="heading mb-4">Контактная информация</h6>
                         <ul class="list-unstyled">
-                            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <li><p class="text-sm opacity-8 mb-0"><span itemprop="postalCode">198504</span>, <span itemprop="addressLocality">Санкт-Петербург</span></p></li>
-                                <li><p class="text-sm opacity-8 mb-0"><span itemprop="streetAddress">Университетский проспект, дом 28</span></p></li>
-                            </span>
+                            <li><p class="text-sm opacity-8 mb-0">198504, Санкт-Петербург</p></li>
+                            <li><p class="text-sm opacity-8 mb-0">Университетский проспект, дом 28</p></li>
                             <li><p class="text-sm opacity-8 mb-0">Телефон: <a href="tel:+78124287109">+7 (812) 428-71-09</a></p></li>
                             <li><p class="text-sm opacity-8 mb-0">Email: <a href="mailto:a.terekhov@spbu.ru">a.terekhov@spbu.ru</a></p></li>
                             <li><p class="text-sm opacity-8 mb-0">Telegram: <a target="_blank" href="https://t.me/sysprog2020admission">@sysprog2020admission</a></p></li>
@@ -428,8 +435,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-lg-4 col-4 col-sm-4 mb-5 mb-lg-0">
                         <h6 class="heading mb-3">Поступающим</h6>
                         <ul class="list-unstyled">
-                            <li><a href="../index.html#undergraduate">В&nbsp;бакалавриат</a></li>
+                            <li><a href="admission.html">В&nbsp;бакалавриат</a></li>
                             <li><a href="../index.html#magistracy">В&nbsp;магистратуру</a></li>
+                            <li><a href="../frequently-asked-questions.html">Вопросы и ответы</a></li>
                         </ul>
                     </div>
                 </div>
@@ -458,6 +466,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="row">
                     <hr class="divider divider-fade divider-dark">
                         <div class="col-lg-12">
+                            <div class="text-sm font-weight-bold text-center text-md-left">
+                                <a href="../nooffer.html" class="text-white">Данный сайт носит информационный характер и не является публичной офертой.</a>
+                            </div>
                             <div class="copyright text-sm font-weight-bold text-center text-md-left">
                                 &copy; Кафедра системного программирования, Математико-механический факультет, СПбГУ, 1996-2021
                             </div>
@@ -480,6 +491,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA74mo0V79zPcSWjgUMe9AdmLy3-ruPKLs"></script>
     <!-- Quick JS -->
     <script src="../assets/js/quick-website.js"></script>
+    <script src="../assets/js/se_scripts.js"></script>
     <!-- Feather Icons -->
     <script>
         feather.replace({

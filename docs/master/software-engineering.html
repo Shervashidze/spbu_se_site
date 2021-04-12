@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" >
 
 <head>
     <meta charset="utf-8">
@@ -93,20 +93,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="sr-only">Загрузка...</span>
         </div>
     </div>
-    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false" aria-labelledby="modal-cookies" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
-            <div class="modal-content bg-dark-dark">
-                <div class="modal-body">
-                    <!-- Text -->
-                    <p class="text-sm text-white mb-3">
-                        Продолжая использовать наш сайт, вы даете согласие на обработку файлов cookie, которые обеспечивают правильную работу сайта.
-                    </p>
-                    <!-- Buttons -->
-                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">Согласен</button>
-                </div>
+
+    <div class="fixed-bottom bg-dark-dark alert mb-0 cookiealert collapse" id="modal-cookies" role="alert">
+    <!-- Text -->
+        <div class="container">
+            <div class="row align-items-center">
+                <p class="text-sm text-white mb-0 my-auto">
+                    Продолжая использовать наш сайт, вы даете согласие на обработку файлов cookie, которые обеспечивают правильную работу сайта.
+                </p>
+                <!-- Buttons -->
+                <button type="button" class="btn btn-sm btn-primary ml-0 mt-2 mt-lg-0 ml-lg-4 acceptcookies">Согласен</button>
             </div>
         </div>
     </div>
+
     <!-- Header -->
     <header class="header-transparent" id="header-main">
 
@@ -181,7 +181,7 @@ a.onreadystatechange = function() {
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-md p-0">
                                     <div class="list-group list-group-flush px-lg-4">
-                                        <a href="../index.html#undergraduate" class="list-group-item list-group-item-action" role="button">
+                                        <a href="../bachelor/admission.html" class="list-group-item list-group-item-action" role="button">
                                             <div class="d-flex">
                                                 <!-- Media body -->
                                                 <div class="ml-3">
@@ -194,6 +194,14 @@ a.onreadystatechange = function() {
                                                 <!-- Media body -->
                                                 <div class="ml-3">
                                                     <small class="text-sm">Магистратура</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="../frequently-asked-questions.html" class="list-group-item list-group-item-action" role="button">
+                                            <div class="d-flex">
+                                                <!-- Media body -->
+                                                <div class="ml-3">
+                                                    <small class="text-sm">Вопросы и ответы</small>
                                                 </div>
                                             </div>
                                         </a>
@@ -315,7 +323,7 @@ a.onreadystatechange = function() {
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <h2 class="font-weight-normal text-center mb-0">
-                                        20
+                                        <a href="https://abiturient.spbu.ru/files/2021/mag/mag_prog_VI_2021.pdf" target="_blank" class="text-primary">20</a>
                                     </h2>
                                     <p class="text-center mb-0">
                                         Бюджетных мест
@@ -339,7 +347,7 @@ a.onreadystatechange = function() {
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <h2 class="font-weight-normal text-center mb-0">
-                                        10
+                                        <a href="https://abiturient.spbu.ru/files/2021/mag/mag_prog_VI_2021.pdf" target="_blank" class="text-primary">10</a>
                                     </h2>
                                     <p class="text-center mb-0">
                                         Мест по контракту
@@ -592,8 +600,9 @@ a.onreadystatechange = function() {
                     <div class="col-lg-4 col-4 col-sm-4 mb-5 mb-lg-0">
                         <h6 class="heading mb-3">Поступающим</h6>
                         <ul class="list-unstyled">
-                            <li><a href="../index.html#undergraduate">В&nbsp;бакалавриат</a></li>
+                            <li><a href="../bachelor/admission.html">В&nbsp;бакалавриат</a></li>
                             <li><a href="../index.html#magistracy">В&nbsp;магистратуру</a></li>
+                            <li><a href="../frequently-asked-questions.html">Вопросы и ответы</a></li>
                         </ul>
                     </div>
                 </div>
@@ -622,6 +631,9 @@ a.onreadystatechange = function() {
                 <div class="row">
                     <hr class="divider divider-fade divider-dark">
                         <div class="col-lg-12">
+                            <div class="text-sm font-weight-bold text-center text-md-left">
+                                <a href="../nooffer.html" class="text-white">Данный сайт носит информационный характер и не является публичной офертой.</a>
+                            </div>
                             <div class="copyright text-sm font-weight-bold text-center text-md-left">
                                 &copy; <span itemprop="name">Кафедра системного программирования</span>, Математико-механический факультет, СПбГУ, 1996-2021
                             </div>
@@ -646,6 +658,7 @@ a.onreadystatechange = function() {
     <!-- script src='https://www.google.com/recaptcha/api.js' async defer></script -->
     <!-- Quick JS -->
     <script src="../assets/js/quick-website.js"></script>
+    <script src="../assets/js/se_scripts.js"></script>
     <!-- Feather Icons -->
     <script>
         feather.replace({
